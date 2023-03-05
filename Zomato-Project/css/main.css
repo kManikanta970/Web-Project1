@@ -1,0 +1,205 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+online way
+*/
+
+/* rules */
+
+@font-face {
+  /* offline font way */
+  font-family: Poppins;
+  src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background-color: #FBFBFB;
+}
+
+.main-section{
+    background-color: lightblue; 
+    height: 400px;
+
+    /* gradient means applying multi-colors */
+    background-image: linear-gradient(transparent, #000000e9),
+     url(../images/main-bg.png); /* background image inserts particular background position */
+    background-size: 100%;  /* image sizes  small bigger increases and lowers*/
+    background-repeat: no-repeat; /* background image is not repeating */
+    background-position: center;   /*center, top, right, left, bottom, corner(top right corner/ bottom right corner)  */
+    /* background-attachment: ; */
+}
+
+.main-section-header{
+    padding: 20px;   /* top right bottom left */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+.main-section-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 
+flex-direction: row;
+justify-content: horizontal(left-right)
+align-item: vertical(top-bottom)
+
+flex-direction: column;
+justify-content: vertical(top-bottom)
+align-item: horizontal(left-right)
+*/
+
+.btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+  }
+  
+  .btn-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+  }
+  
+  .text-white{
+    color: white;  /* text colors  */
+    font-family: 'Poppins', sans-serif;
+
+  }
+ 
+  .brand {
+    /* e! */
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* font properties */
+    font-size: 4rem ; /* 16px => by default , px=> 16px = rem, 0.5rem=8px, 2rem=32px  */
+    font-weight: bold; /* thickness of letter or text */
+   color: #EB2929;
+   font-family: 'Poppins', sans-serif;
+
+    /* round circle */
+    border-radius: 50%;
+
+  }
+ 
+  .tag-line{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 0.5rem; /* space */
+    margin-bottom: 1rem;
+  }
+
+  .search{
+    /* background-color: lightcoral; */
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    outline: 0;
+    border-radius: 0;
+    border: none;
+  }
+
+  .location-search{
+    width: 35%;
+  }
+
+  .location-restaurant{
+    width: 63%;
+  }
+
+ /* quick search area */
+ .quick-search{
+  /* background-color: lightcoral; */
+  width: 85%;
+  margin: auto;
+  padding: 1.5rem;
+ }
+
+ .quick-search > h1{
+  color: #192F60;
+ }
+
+ .quick-search > p{
+  color: #8C96AB;
+  margin-top: 0.6rem;
+  margin-bottom: 1100%rem;
+ }
+
+ .section-list-item{
+  display: flex;
+  background-color: #FFFFFF;
+  width: 30%;
+  height: 170px;
+  margin-bottom: 1rem;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 8px 0px rgb(249, 221, 10);
+  /* x-axis(left-right) , y-axis(top-bottom), blur, scale(increasing size), color */
+  transition: transform 0.5s; box-shadow: 0.5s; /* Animation on :hover  and timing */
+ }
+
+
+/* :hover => pseudo class */
+
+.section-list-item:hover{
+  box-shadow: 0px 0px 8px 0px green;
+  transform: scale(1.05); /* zoom in the screen element */
+  /* transform: rotateZ(90deg);  */ /* rotate the screen */
+}
+
+/* width: 30%; === 100% */
+ .section-list-item-image{
+ width: 45%;
+ height: 100%;
+ /* background-color: red; */
+ overflow: hidden; /* crop in the particular area */
+ }
+
+ .section-list-item-image >img{
+  height: 150%;
+  width: 150%;
+  transform: translate(-60px);
+  /* move element, rotate element, scale */
+ }
+ .section-list-item-title{
+   width: 55%;
+   padding: 1rem;
+ }
+
+ .section-list-item-title > p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #192F60;
+  margin-bottom: 8px;
+ }
+
+ .section-list-item-title > span{
+  color: #8C96AB;
+ }
+
+ .section-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+ }
+
+ /*  */
